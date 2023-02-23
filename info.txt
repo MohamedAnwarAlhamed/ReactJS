@@ -1,3 +1,5 @@
 
 npx create-react-app my_app
 npm start
+The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
+createRoot() to create a React root for displaying content inside a browser DOM element.

@@ -1,9 +1,9 @@
 
 
 
-function Car() {
+function Car(props) {
     return (
-        <h2>Hi, I am a Car!</h2>
+        <h2>Hi, I am a Car {props.name}</h2>
         
     );
   }

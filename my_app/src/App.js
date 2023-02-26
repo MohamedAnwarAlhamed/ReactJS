@@ -2,6 +2,7 @@ import {React, useState} from 'react';
 import Car from './car';
 import Cat from './components/Animals';
 import './App.css';
+import AnimalsClass from './components/AnimalsClass';
 //import ReactDOM from 'react-dom';
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
         <button onClick={handleIncrement}>increment</button>
         <button onClick={() => setCount(count + 1)}>increment 2</button>
         {count}
+
+        <AnimalsClass />
     </div>
   );
 }

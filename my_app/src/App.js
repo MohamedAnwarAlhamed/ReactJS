@@ -25,8 +25,12 @@ function App() {
         <Car name="toyota"/>
         <h1 style={style}>hi mohamed anwar</h1>
         {
-        animals.map((animals) => (           
-            <Cat key={animals.name} name={animals.name} age={animals.age}/>
+        animals.map((animals) => (
+          <div key={animals.name}>
+            <Cat  name={animals.name} age={animals.age}/>
+            <AnimalsClass   name={animals.name} age={animals.age}/>
+          </div>           
+
         ))
       }
      
@@ -34,7 +38,6 @@ function App() {
         <button onClick={() => setCount(count + 1)}>increment 2</button>
         {count}
 
-        <AnimalsClass />
     </div>
   );
 }

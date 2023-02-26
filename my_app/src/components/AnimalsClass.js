@@ -1,25 +1,17 @@
-import { react , Component } from 'react';
+import { react, Component } from 'react'
 
-class AnimalsClass extends Component
-{
-    state = {
-        count : 0 
-    }
-    handleIncrement = () => {
-        this.setState({count : this.state.count + 1})
-    }
-    render(){
-        return(
-                <div>
-                {this.state.count}
-                <button onClick={this.handleIncrement}>increment</button>
-                <button onClick={() => {
-                    this.setState({count : this.state.count + 1})
-                }}>increment2</button>
-                
-                </div>
-        )
-    }
+class AnimalsClass extends Component {
+    render() {
+      const {name, age} = this.props;
+    return (
+      <div>
+        // <h2>Hi, I am a Cat name {this.props.name}</h2>
+        // <h3>Hi, I am a Cat age {this.props.age}</h3>
+        <h2>Hi, I am a Cat name {name}</h2>
+        <h3>Hi, I am a Cat age {age}</h3>
+      </div>
+    )
+  }
 }
 
-export default AnimalsClass;
+export default AnimalsClass

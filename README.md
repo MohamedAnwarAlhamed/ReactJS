@@ -16,3 +16,11 @@ In React.js, the ReactDOM.createRoot() method is used to create a root for a Rea
 In previous versions of React, we would use the ReactDOM.render() method to render a React tree into a container element in the HTML document. However, with the introduction of concurrent mode, ReactDOM.render() is no longer recommended for use in most cases.
 
 Instead, we use ReactDOM.createRoot() to create a root for our React tree, and then call the root.render() method to render the tree into the container element. This allows us to take advantage of the new concurrent mode features in React.
+
+===============================================================
+
+===============================================================
+
+In React.js, "props" (short for "properties") is a way to pass data from one component to another. Props are essentially a set of arguments that get passed from a parent component to a child component.
+
+Props are read-only, which means that the child component cannot modify the props that it receives from its parent. Instead, the parent component is responsible for updating the props and passing them down to the child component as needed.
